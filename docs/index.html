@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waigani Primary School Alumni Fundraising</title>
+    <meta
+      name="description"
+      content="Alumni fundraising campaigns, events, donations, and school project updates for Waigani Primary School."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container">
+        <a class="brand" href="#top">Waigani Primary Alumni</a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+          Menu
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a href="#campaigns">Campaigns</a>
+          <a href="#events">Events</a>
+          <a href="#donate">Donate</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Community-led impact</p>
+            <h1>Support Waigani Primary School through alumni action</h1>
+            <p>
+              Coordinate fundraising campaigns, share event information, and keep alumni informed about
+              school support outcomes.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#donate">Donate Now</a>
+              <a class="button button-secondary" href="#events">View Upcoming Events</a>
+            </div>
+          </div>
+          <aside class="highlight-card">
+            <h2>Current Goal</h2>
+            <p class="goal-amount">PGK 75,000</p>
+            <p>Library and classroom resource uplift for Term 3.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="campaigns">
+        <div class="container">
+          <h2>Fundraising Campaigns</h2>
+          <p class="section-intro">Track current and completed campaigns from the alumni committee.</p>
+          <div class="cards" id="campaign-list"></div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="events">
+        <div class="container">
+          <h2>Events & Registration</h2>
+          <p class="section-intro">Join activities designed to reconnect alumni and raise support.</p>
+          <div class="cards" id="event-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="donate">
+        <div class="container donate-grid">
+          <div>
+            <h2>Donation Information</h2>
+            <p>
+              Backend payment services will be connected later. For now, this page captures donor intent and
+              preferred contribution channels.
+            </p>
+            <ul class="channel-list">
+              <li>Bank transfer (school account)</li>
+              <li>Mobile money contributions</li>
+              <li>Corporate and alumni sponsorships</li>
+            </ul>
+          </div>
+          <form class="card" id="donation-form" novalidate>
+            <h3>Pledge Support</h3>
+            <label>
+              Full name
+              <input name="name" type="text" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" required />
+            </label>
+            <label>
+              Intended amount (PGK)
+              <input name="amount" type="number" min="1" required />
+            </label>
+            <label>
+              Preferred channel
+              <select name="channel" required>
+                <option value="">Select channel</option>
+                <option>Bank transfer</option>
+                <option>Mobile money</option>
+                <option>Corporate sponsorship</option>
+              </select>
+            </label>
+            <button class="button button-primary" type="submit">Submit pledge</button>
+            <p class="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="projects">
+        <div class="container">
+          <h2>School Support Updates</h2>
+          <p class="section-intro">Progress snapshots to keep donors and alumni informed.</p>
+          <div class="cards" id="project-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <h2>Contact & Alumni Engagement</h2>
+            <p>Share ideas, volunteer skills, or register alumni chapter updates.</p>
+            <p><strong>Email:</strong> alumni@waiganiprimary.org</p>
+            <p><strong>Phone:</strong> +675 0000 0000</p>
+          </div>
+          <form class="card" id="contact-form" novalidate>
+            <h3>Send a message</h3>
+            <label>
+              Name
+              <input name="name" type="text" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Send message</button>
+            <p class="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Waigani Primary School Alumni Association</p>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
